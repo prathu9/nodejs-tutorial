@@ -12,3 +12,5 @@
 12) Again nextTick and then Promise queue callback is executed
 13) Close queue callback is executed next
 14) Event loop runs agains from 2) if more callbacks are remaining
+
+//Note: nextTick and Promise queues are executed in between each queue and also in between each callback execution in the timer and check queues
