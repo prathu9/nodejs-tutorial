@@ -1,0 +1,14 @@
+1) All synchronous code is executed
+2) Start of event loop - Asynchronous code execution first starts with microtask
+3) nextTick queue callback is executed first if present
+4) Promise queue callback is executed next
+5) Timer queue callback is executed next
+6) Again nextTick and then Promise queue callback is executed
+7) IO queue callback is executed next
+8) Again nextTick and promise queue callback is executed
+9) IO queue callback is executed next
+10) Again nextTick and then Promise queue callback is executed
+11) Check queue callback is executed next
+12) Again nextTick and then Promise queue callback is executed
+13) Close queue callback is executed next
+14) Event loop runs agains from 2) if more callbacks are remaining
